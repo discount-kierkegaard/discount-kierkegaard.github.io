@@ -3,7 +3,6 @@
         <h1>HELLO FELLOW HUMANS</h1>
     </head>
     <body onload="randomImage();">
-        <p id="debug"></p>
         <script type="text/javascript">
 
             var paths = [
@@ -17,7 +16,6 @@
                 var num = Math.floor(Math.random() * paths.length);
                 var img_path = paths[num]
                 document.getElementById("img").src = img_path;
-                document.getElementById("debug").innerHTML = img_path;
             }
         
         </script>
