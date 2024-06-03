@@ -6,7 +6,7 @@
         <script type="text/javascript">
 
             var paths = [
-                "amzanon 4.png",
+                "amzanon 1.png",
                 "amzanon 2.png",
                 "amzanon 3.png",
                 "amzanon 4.png"
@@ -14,7 +14,7 @@
 
             function randomImage() {
                 var num = Math.round(Math.random() * paths.length)
-                document.body.appendChild(new Image()).src = paths[num];
+                document.getElementById("img").src = paths[num];
             }
         
         </script>
