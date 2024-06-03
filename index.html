@@ -2,19 +2,25 @@
     <head>
         <h1>HELLO FELLOW HUMANS</h1>
     </head>
-    <body>
+    <body onload="randomImage();">
         <script type="text/javascript">
+
+            var paths = [
+                "amzanon 4.png",
+                "amzanon 2.png",
+                "amzanon 3.png",
+                "amzanon 4.png"
+            ]
+
             function randomImage() {
-                var list = [
-                    "/amzanon 1.png",
-                    "/amzanon 2.png",
-                    "/amzanon 3.png",
-                    "/amzanon 4.png"
-                ]
-                var num = (Math.floor(Math.random()*list.length)
-                document.body.appendChild(new Image()).src=list[num];
-             }
+                var num = Math.round(Math.random() * paths.length)
+                document.body.appendChild(new Image()).src = paths[num];
+            }
+        
         </script>
+
+        <img id="img">
+
         <h3>WELCOME</h3>
         <p>THIS IS HUMAN NUMBER 42</p>
         <p>AS A HUMAN, I WOULD LIKE TO ADVISE THAT YOU ALL DO NOT LOOK AT THE SKY JUNE 8TH 2024</p>
